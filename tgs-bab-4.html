@@ -71,7 +71,7 @@
                             <tr>
                                 <th>Nomor penerbangan</th>
                                 <th>Keberangkatan</th>
-                                <th>Keberangkatan</th>
+                                <th>Tujuan</th>
                                 <th>Waktu keberangkatan</th>
                                 <th>Jam kedatangan</th>
                             </tr>
@@ -117,3 +117,69 @@
 
 
 
+<!-- unk javaScript 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rute Penerbangan</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+
+<h1>Pencarian Rute Penerbangan</h1>
+
+<label for="from">Dari:</label>
+<input type="text" id="from">
+<br><br>
+<label for="to">Ke:</label>
+<input type="text" id="to">
+<br><br>
+<button onclick="searchFlights()">Cari Rute</button>
+
+<script>
+    function searchFlights() {
+        const from = document.getElementById('from').value;
+        const to = document.getElementById('to').value;
+
+        // Memeriksa jika input kosong
+        if (!from || !to) {
+            alert('Silakan masukkan kota asal dan tujuan!');
+            return;
+        }
+
+        // Simulasi proses pencarian rute penerbangan secara asynchronous (promise)
+        findFlight(from, to)
+            .then(result => {
+                if (result) {
+                    alert(`Rute ditemukan!\nHarga: $${result.price}`);
+                } else {
+                    alert('Maaf, rute tidak ditemukan.');
+                }
+            })
+            .catch(error => {
+                console.error('Terjadi kesalahan:', error);
+                alert('Terjadi kesalahan saat mencari rute penerbangan.');
+            });
+    }
+
+    function findFlight(from, to) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                const flight = flights.find(f => f.from === from && f.to === to);
+                if (flight) {
+                    resolve(flight);
+                } else {
+                    reject('Rute tidak ditemukan.');
+                }
+            }, 1000); // Simulasi waktu pencarian
+        });
+    }
+</script>
+</body>
+</html>
