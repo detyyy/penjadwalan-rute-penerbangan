@@ -3,13 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, 
-initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="assets/logo.png">
 <link rel="stylesheet" href="css/admin.css">
 <link 
-href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.c
-ss" rel="stylesheet" />
+href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 <title>Admin Penjadwalan </title>
 </head>
 <body>
@@ -20,24 +18,24 @@ ss" rel="stylesheet" />
 </div>
 <ul class="nav-links">
 <li>
-<a href="admin.html" class="active">
+<a href="admin.php" class="active">
 <i class="bx bx-grid-alt"></i>
 <span 
 class="links_name">Dashboard</span>
 </a>
 </li>
 <li>
-<a href="Flights/Flights.html">
+<a href="Schedules/Schedules.php">
 <i class="bx bx-box"></i>
 <span 
-class="links_name">Flights</span>
+class="links_name">Schedules</span>
 </a>
 </li>
 <li>
-<a href="Bookings/Bookings.html">
+<a href="Flight/Flight.php">
 <i class="bx bx-list-ul"></i>
 <span 
-class="links_name">Bookings</span>
+class="links_name">Flight</span>
 </a>
 </li>
 <li>

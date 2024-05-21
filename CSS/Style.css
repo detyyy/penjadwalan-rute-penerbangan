@@ -77,11 +77,10 @@
     align-items: center;
     margin-bottom: 50px;
     }
-    .jumbotron-text {
-    III-46
+    /* .jumbotron-text {
     width: 30%;
     font-weight: 500;
-    }
+    } */
     .jumbotron-text h1{
     color: antiquewhite;
     margin: 20px 0;

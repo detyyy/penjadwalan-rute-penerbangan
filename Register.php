@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Penjadwalan Rute Penerbangan</title>
+    <title>Register</title>
+    <link rel="icon" href="assets/icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
+
 <body>
-    <header>
-        <h1>Register</h1>
-    </header>
-
-    <form action="process_register.php" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-
-        <label for="confirm_password">Konfirmasi Password:</label>
-        <input type="password" id="confirm_password" name="confirm_password" required>
-
-        <button type="submit">Daftar</button>
-        </form>
-
-    <p>Sudah punya akun? <a href="login.html">Login disini</a></p>
+    <div class="container">
+        <header>
+            <nav>
+                <!-- <div class="logo">
+                    <img src="assets/logo.png" alt="" />
+                </div> -->
+                <input type="checkbox" id="click" />
+                <label for="click" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="#">Flight</a></li>
+                    <li><a href="login.php" class="btn_login">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="center">
+                <div class="form-login">
+                    <h3>Register</h3>
+                    <form action="Register-Proses.php" method="post">
+                        <input class="input" type="email" name="email" placeholder="Email" />
+                        <input class="input" type="password" name="password" placeholder="Password" />
+                        <input class="input" type="text" name="username" placeholder="Username" />
+                        <button type="submit" class="btn_login" name="register" id="register">
+                            Register
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
+
 </html>

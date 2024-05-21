@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Flight Schedule - Bookings</title>
-<link rel="stylesheet" href="styles.css"> <!-- Anda dapat menyesuaikan nama file CSS yang sesuai -->
+<link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
   <header>
@@ -16,9 +16,9 @@
   <nav>
     <div class="container">
       <ul>
-        <li><a href="admin.html">Dashboard</a></li>
-        <li><a href="flights.html">Flights</a></li>
-        <li><a href="bookings.html" class="active">Bookings</a></li>
+        <li><a href="admin.php">Dashboard</a></li>
+        <li><a href="flights.php">Flights</a></li>
+        <li><a href="bookings.php" class="active">Bookings</a></li>
       </ul>
     </div>
   </nav>
